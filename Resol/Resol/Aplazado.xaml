@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Resol.Aplazado">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Listado de Alumnos 7mo Grado" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Entry x:Name="txtanio" Placeholder="Ingrese un Año Lectivo"></Entry>
+            <Button Text="Generar" Clicked="Button_Clicked"></Button>
+
+            <ListView x:Name="lstapla" HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding rne}" TextColor="Red"></Label>
+                                <Label Text="{Binding nombrec}" TextColor="Red"></Label>
+                                <Label Text="{Binding genero}" TextColor="Red"></Label>
+                                <Label Text="{Binding gradon}" TextColor="Red"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Resol.PerfilA">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Perfil Alumnado" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            <Entry x:Name="txtrne" Placeholder="Ingrese el RNE del Alumno a Buscar"></Entry>
+            <Button Text="Generar" Clicked="Button_Clicked"></Button>
+
+            <ListView x:Name="lstAlumno" HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="RNE Alumno"></Label>
+                                <Entry x:Name="txtrne1" Text="{Binding rne}" IsEnabled="false"></Entry>
+                                <Label Text="Primer Nombre"></Label>
+                                <Entry x:Name="txtnombre1" Text="{Binding nombre1}" IsEnabled="false"></Entry>
+                                
+                                <Label Text="Segundo Nombre"></Label>
+                                <Entry x:Name="txtnombre2" Text="{Binding nombre2}" IsEnabled="false"></Entry>
+                                
+                                <Label Text="Primer Apellido"></Label>
+                                <Entry x:Name="txtape1" Text="{Binding ape1}" IsEnabled="false"></Entry>
+                                <Label Text="Segundo Apellido"></Label>
+                                <Entry x:Name="txtape2" Text="{Binding ape2}" IsEnabled="false"></Entry>
+                                <Label Text="Genero"></Label>
+                                <Entry x:Name="txtgenero" Text="{Binding genero}" IsEnabled="false"></Entry>
+                                <Label Text="Fecha Nacimiento"></Label>
+                                <Entry x:Name="txtfechanac" Text="{Binding fechanac}" IsEnabled="false"></Entry>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

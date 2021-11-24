@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Resol.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="18" CornerRadius="0">
+            <Label Text="Examen 2do Parcial" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        </Frame>
+        <Button Text="Perfil Alumno" Clicked="Button_Perfil"></Button>
+        <Button Text="Listado Alumnos 7mo Grado" Clicked="Button_Aplazado"></Button>
+        <Button Text="Listado Alumnos " Clicked="Button_Listado"></Button>
+    </StackLayout>
+
+</ContentPage>
